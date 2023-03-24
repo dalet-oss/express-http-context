@@ -1,20 +1,21 @@
 {
-  "name": "express-http-context",
-  "version": "1.2.4",
+  "name": "@dalet-oss/express-http-context",
+  "version": "1.0.0-DEV",
   "description": "Get and set request-scoped context anywhere",
   "main": "index.js",
   "browser": "browser.js",
+  "types": "./index.d.ts",
   "engines": {
-    "node": ">=8.0.0 <10.0.0 || >=10.4.0"
+    "node": ">=16.0.0"
   },
   "scripts": {
-    "cover": "istanbul cover _mocha index.js -R ./tests --coverage",
-    "test": "mocha ./tests",
+    "test": "node --unhandled-rejections=strict ./node_modules/.bin/mocha --config test/.mocharc.json",
+    "cover": "nyc --reporter lcov --reporter text-summary _mocha --config test/.mocharc.json",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skonves/express-http-context.git"
+    "url": "git+https://github.com/dalet-oss/express-http-context.git"
   },
   "keywords": [
     "express",
@@ -22,28 +23,35 @@
     "request",
     "context"
   ],
-  "author": "Steve Konves",
+  "author": "Oliver Lockwood",
   "contributors": [
-    "Steve Konves",
-    "Amiram Korach"
+    "Oliver Lockwood (@oliverlockwood)",
+    "Steve Konves (@skonves)",
+    "Amiram Korach (@amiram)",
+    "Yoni Rabinovitch (@yonirab)",
+    "DontRelaX (@dontrelax)",
+    "William Durand (@willdurand)"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/skonves/express-http-context/issues"
+    "url": "https://github.com/dalet-oss/express-http-context/issues"
   },
-  "homepage": "https://github.com/skonves/express-http-context#readme",
+  "homepage": "https://github.com/dalet-oss/express-http-context#readme",
+  "directories": {
+    "test": "test"
+  },
   "dependencies": {
     "@types/cls-hooked": "^4.2.1",
-    "@types/express": "^4.16.0",
+    "@types/express": "^4.17.17",
     "cls-hooked": "^4.2.2"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
-    "coveralls": "^3.0.1",
-    "express": "^4.16.2",
-    "istanbul": "^0.4.5",
-    "mocha": "^5.0.1",
+    "chai": "^4.3.7",
+    "coveralls": "^3.1.1",
+    "express": "^4.18.2",
+    "nyc": "^15.1.0",
+    "mocha": "^10.2.0",
     "mocha-lcov-reporter": "^1.3.0",
-    "supertest": "^3.0.0"
+    "supertest": "^6.3.3"
   }
 }

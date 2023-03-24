@@ -1,0 +1,9 @@
+{
+  "extension": ["js", "ts"],
+  "spec": "test/**/*.spec.js",
+  "exit": false,
+  "color": true,
+  "diff": true,
+  "full-trace": true,
+  "timeout": 30000
+}
