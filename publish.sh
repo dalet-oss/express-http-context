@@ -18,7 +18,7 @@ fi
 VERSION=$(echo $VERSION | sed 's#release/##g')
 echo "Publishing version: ${VERSION}"
 
-status=$(curl -s --head -w %{http_code} -o /dev/null  https://www.npmjs.com/package/@dalet-oss/lexorank/v/${VERSION}/)
+status=$(curl -s --head -w %{http_code} -o /dev/null  https://www.npmjs.com/package/@dalet-oss/express-http-context/v/${VERSION}/)
 if [ $status -eq 200 ]
 then
   echo 'Version already available on the NPM Registry.  This must be a rebuild; nothing to do here.'
