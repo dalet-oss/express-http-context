@@ -1,39 +1,16 @@
-# Contributing to `express-http-context2`
+How to make a contribution
 
-Help is welcome and much appreciated, whether you are an experienced developer or just looking for sending your first pull request. Please check the open issues. Be sure to follow the [Contributor Code of Conduct](./CODE_OF_CONDUCT.md).
+Never made an open source contribution before? Wondering how contributions work in our project? Here's a quick rundown!
 
-## Guidelines
-
-- Please fill in an issue before creating a Pull Request.
-- Please try to [combine multiple commits before pushing](https://stackoverflow.com/questions/6934752/combining-multiple-commits-before-pushing-in-git)
-- Please use `TDD` when fixing bugs. This means that you should write a unit test that fails because it reproduces the issue, then you should fix the issue and finally run the test to ensure that the issue has been resolved. This helps us prevent fixed bugs from happening again in the future.
-- Please keep the test coverage at 100%. Write additional unit tests if necessary.
-- Please commit using [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
-
-## Setup
-
-1. Fork of the repository
-
-2. Clone your fork of the repository
-
-   ```sh
-   git clone https://github.com/YOUR_USERNAME/express-http-context2.git
-   ```
-
-3. Go to the project root folder
-
-   ```sh
-   cd express-http-context2
-   ```
-
-4. Configure git hooks
-
-   ```sh
-   git config core.hooksPath .githooks
-   ```
-
-5. Install npm dependencies (PNPM should be used)
-
-   ```sh
-   pnpm install --frozen-lockfile
-   ```
+1. Fork this repository to your own GitHub account. This means that you will have a copy of the repository under your-GitHub-username/repository-name.
+1. Clone the repository to your local machine using `git clone https://github.com/your-GitHub-username/express-http-context.git`.
+1. Create a new branch for your changes using `git checkout -b branch-name-here`.
+1. Make the appropriate changes for the issue you are trying to address or the feature that you want to add.
+1. Add tests for new code.  If you are submitting a bug fix, consider writing the test first.  A good test will fail until your finish writing the fix.
+1. If this is your first time contributing to this project, feel free to add your name to the bottom of the README. :D
+1. Commit your changes and push them to your fork.
+1. Submit a pull request from your fork to `dalet-oss/express-http-context`.  The title should be a short description of the changes you made.
+1. In the description of your pull request, explain the changes that you made, any issues you think exist with the pull request you made, and any questions you have for the maintainer. It's OK if your pull request is not perfect (no pull request is), the reviewer will be able to help you fix any problems and improve it!
+1. Wait for the pull request to be reviewed by a maintainer.
+1. Make changes to the pull request if the reviewing maintainer recommends them.
+1. Celebrate your success after your pull request is merged!

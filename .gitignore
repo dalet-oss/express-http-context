@@ -4,3 +4,6 @@ node_modules/
 .nyc_output
 coverage/
 lib/
+index.js
+index.d.ts
+.idea
