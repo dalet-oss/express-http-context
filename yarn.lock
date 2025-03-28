@@ -381,10 +381,10 @@
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
 
-"@dalet-oss/express-http-context@1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@dalet-oss/express-http-context/-/express-http-context-1.1.1.tgz#00c4edfaf4d926a5edc47281eadc6d89273859db"
-  integrity sha512-AftIxG+Vo9QEOzOaEc2/bjoJ8dKhlF4IHThELwuJ9gFq0OxPRWWNmzAtwmq+Tp/zVNfwjtfHa0j5bB/T2inEaQ==
+"@dalet-oss/express-http-context@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@dalet-oss/express-http-context/-/express-http-context-1.2.2.tgz#f6e7bcaa3d0a3437dc3305d2f04a50f64850127e"
+  integrity sha512-Phce8P+7joYd7DQzV4L6INuoPFr7uUMidisPKFJGiWwUFtAaJsL6i5U9fLCaFWYzW3YDYrhlL3S4ypKwnBbnUg==
 
 "@eslint-community/eslint-utils@^4.2.0":
   version "4.5.1"
@@ -529,12 +529,12 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@oliverlockwood/express-http-context-intermediate-library@0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@oliverlockwood/express-http-context-intermediate-library/-/express-http-context-intermediate-library-0.0.4.tgz#d91d48e73b793ad82a66fcd0c5feb2a9cec16041"
-  integrity sha512-MFXKqscwtBQGQK+v8ivWT8WNlo50jfmQKqOnjbVHkOnwhVBVr3cKoWt3NzE008sWQGYEnMjpC5F8Y9t8E0OVVQ==
+"@oliverlockwood/express-http-context-intermediate-library@0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@oliverlockwood/express-http-context-intermediate-library/-/express-http-context-intermediate-library-0.0.5.tgz#feec4cdd934aceddc4a2a3e0b5fa338fb93ca33b"
+  integrity sha512-FUA6uLrOwdayHYFzguiSH+Djhq4sjR4k+eydrXjvf5LpQLpJeSar5w5KdNd8geuVzaQC7IfDKlh+G2o305+SVQ==
   dependencies:
-    "@dalet-oss/express-http-context" "1.1.1"
+    "@dalet-oss/express-http-context" "1.2.2"
     express "4.21.2"
     nanoid "3.3.11"
 
