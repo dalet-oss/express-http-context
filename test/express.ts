@@ -3,7 +3,7 @@ import supertest from 'supertest'
 import tap from 'tap'
 
 import { get, middleware, set } from '../src'
-import { init, REQUEST_ID_CONTEXT_KEY, REQUEST_ID_IN_RESPONSE_HTTP_HEADER_NAME } from './local-intermediate-module'
+import { init, REQUEST_ID_CONTEXT_KEY, REQUEST_ID_IN_RESPONSE_HTTP_HEADER_NAME } from '@oliverlockwood/express-http-context-intermediate-library'
 
 
 const randomValue = Math.random()
